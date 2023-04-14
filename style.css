@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin: 0px;
+}
+ul,
+li {
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1300px;
+}
+html {
+    
+}
+header {
+    position: relative;
+    width: 100%;
+    background:#9fcc38;
+    border-radius: 0px 0px 0px 220px;
+    z-index: 5;
+}
+.header-background {
+    position: absolute;
+    right: 0px;
+    top: -150px;
+    width: 75%;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 0px 0px 220px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-left: 120px;
+}
+.main-photo {
+    max-width: 270px;
+    border-radius: 50%;
+    border: 5px #fcfdf5 solid;
+}
+.header-title {
+    width: fit-content;
+    color: #fcfdf5;
+    margin-left: 160px;
+    margin-top: 80px;
+}
+.main-title {
+    font-size: 60px;
+    font-weight: 900;
+    line-height:55px;
+}
+.name {
+    font-size: 50px;
+    font-weight:lighter;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #def1af;
+}
+.main-description {
+    margin-top: 10px;
+    color: #def1af;
+    font-size: 40px;
+}
+.main-description::before {
+    content: "";
+    position: absolute;
+    border-top: 5px solid white;
+    height: 0;
+    width: 370px;
+    top: calc(60% + 30px);
+    left: 550px;
+}
+            /* ///////////////////PAGE///////////////////// */
+.page {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+aside {
+    position: relative;
+    padding: 170px 30px 50px 120px;
+    background: #111315;
+    margin-top: -100px;
+}
+.aside-background {
+    position: absolute;
+    top: -280px;
+    left: -20px;
+    width: 105%;
+    height: 430px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px 0px 0px 220px;
+    z-index: 2;
+}
+.aside-list {
+    color: #fff;
+}
+.aside-title{
+    width: fit-content;
+    margin-top: 30px;
+    font-size: 34px;
+}
+.aside-element {
+    width: fit-content;
+}
+.contact-element {
+    margin-top: 7px;
+}
+.contact-element :hover {
+    scale: 1.2;
+}
+.contact-element .social-item:hover{
+    scale: 1,5;
+    color:#9fcc38;
+}
+.social-item {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.socimg {
+    position: relative;
+    top:5px;
+    margin-right: 7px;
+}
+.contact-element:nth-child(5) a .socimg {
+    top:2px;
+}
+.contact-element:nth-child(3) a .socimg {
+    top:1px;
+    left: 2px;
+    margin-right: 10px;
+}
+.skills-list {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 30px;
+    margin-top: 10px;
+}
+
+                                    /* Work */
+
+.wraper {
+    position: relative;
+    padding: 100px 50px 50px 100px;;
+}
+.about {
+    font-size: 24px;
+}
+.about > p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+.work-list {
+    position: relative;
+    margin-top: 30px;
+}
+.work-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-name {
+    position: relative;
+    font-size: 24px;
+}
+.work-name::before {
+    content: "";
+    background-image: url(assets/circle.svg);
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    width: 24px;
+    height: 24px;
+}
+.work-element {
+    position: relative;
+}
+.work-element::before{
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -14px;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid rgb(5, 5, 5);
+}
+.work-time {
+    font-size: 16px;
+    color:#a9a9a9
+}
+.work-description {
+    padding-left: 30px;
+}
