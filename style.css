@@ -226,3 +226,6 @@ aside {
     margin-top: 10px;
     padding-left: 30px;
 }
+.link {
+    text-decoration: none;
+}
