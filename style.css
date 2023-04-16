@@ -31,7 +31,7 @@ header {
 }
 .header-background {
     position: absolute;
-    right: 0px;
+    right: -2px;
     top: -150px;
     width: 75%;
     height: 200px;
@@ -91,7 +91,7 @@ header {
 }
 aside {
     position: relative;
-    padding: 170px 30px 50px 120px;
+    padding: 170px 50px 50px 100px;
     background: #111315;
     margin-top: -100px;
 }
@@ -111,7 +111,7 @@ aside {
 .aside-title{
     width: fit-content;
     margin-top: 30px;
-    font-size: 34px;
+    font-size: 24px;
 }
 .aside-element {
     width: fit-content;
@@ -127,7 +127,7 @@ aside {
     color:#9fcc38;
 }
 .social-item {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
 }
@@ -140,9 +140,10 @@ aside {
     top:2px;
 }
 .contact-element:nth-child(3) a .socimg {
-    top:1px;
+    top:5px;
     left: 2px;
     margin-right: 10px;
+    height: 24px;
 }
 .skills-list {
     width: 300px;
@@ -151,6 +152,16 @@ aside {
     row-gap: 10px;
     column-gap: 30px;
     margin-top: 10px;
+    font-size: 16px;
+}
+.language-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.language-element {
+
 }
 
                                     /* Work */
@@ -158,11 +169,13 @@ aside {
 .wraper {
     position: relative;
     padding: 100px 50px 50px 100px;;
+    line-height: 22.4px;
 }
 .about {
     font-size: 24px;
 }
 .about > p {
+    text-indent:30px;
     font-size: 16px;
     margin-top: 5px;
 }
@@ -183,10 +196,14 @@ aside {
     content: "";
     background-image: url(assets/circle.svg);
     position: absolute;
-    top: 2px;
-    left: -25px;
+    top: -2px;
+    left: -30px;
     width: 24px;
     height: 24px;
+}
+.college::before {
+    background-image: url(assets/school.svg);
+    top:-1px;
 }
 .work-element {
     position: relative;
@@ -194,16 +211,18 @@ aside {
 .work-element::before{
     content: "";
     position: absolute;
-    top: 22px;
-    left: -14px;
+    top: 20px;
+    left: -19px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 2px);
     border-left: 3px solid rgb(5, 5, 5);
 }
 .work-time {
     font-size: 16px;
     color:#a9a9a9
+    
 }
 .work-description {
+    margin-top: 10px;
     padding-left: 30px;
 }
