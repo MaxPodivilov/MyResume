@@ -53,7 +53,8 @@ header {
 .header-title {
     width: fit-content;
     color: #fcfdf5;
-    margin-left: 160px;
+    padding-left: 160px;
+    padding-right: 10px;
     margin-top: 80px;
 }
 .main-title {
@@ -81,6 +82,15 @@ header {
     width: 370px;
     top: calc(60% + 30px);
     left: 550px;
+}
+.switch {
+    margin-left: 300px;
+    margin-top: 70px;
+    font-size: 24px;
+    color: #fff;
+    writing-mode: vertical-lr;
+    padding-right: 10px;
+    cursor: pointer;
 }
             /* ///////////////////PAGE///////////////////// */
 .page {
@@ -213,7 +223,7 @@ aside {
     position: absolute;
     top: 20px;
     left: -19px;
-    width: 100%;
+    width: 5px;
     height: calc(100% - 2px);
     border-left: 3px solid rgb(5, 5, 5);
 }
@@ -223,9 +233,52 @@ aside {
     
 }
 .work-description {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     padding-left: 30px;
 }
 .link {
+    width: fit-content;
+    padding: 2px;
     text-decoration: none;
+}
+ .clothes-shop {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    object-fit:contain;
+    border: solid 3px black;
+    z-index: 5;
+    width: 600px;
+} 
+.resume {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    object-fit:contain;
+    border: solid 3px black;
+    z-index: 5;
+    width: 600px;
+}
+.coffee-shop {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    object-fit:contain;
+    border: solid 3px black;
+    z-index: 5;
+    width: 600px;
+}
+.link:hover + .clothes-shop {
+    display: block;
+}
+.link:hover + .resume  {
+    display: block;
+}
+.link:hover + .coffee-shop {
+    display: block;
 }
