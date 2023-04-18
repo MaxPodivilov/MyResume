@@ -94,7 +94,6 @@ header {
 }
 @media (max-width: 1000px) {
     header {
-        max-width: 300px;
         border-radius: 0px 170px 0px 0px;
     }
     .header-background {
@@ -117,24 +116,27 @@ header {
         align-items: center;
     }
     .main-title {
-        margin-top: 10px;
-        font-size: 30px;
+        padding-top: 15px;
+        font-size: 12vw;
         font-weight: 900;
-        line-height:24px;
+        line-height:11vw;
     }
     .name {
-        font-size: 20px;
+        width: 100%;
+        font-size: 8vw;
         font-weight: 400;
-        margin-left: 50px;
+        display: block;
+        text-align: center;
     }
     .main-description {
-        margin-top: 10px;
+        margin: 0px;
         color: #def1af;
-        font-size: 20px;
+        font-size: 8vw;
+        
     }
     .main-description::before {
         content: "";
-        position: absolute;
+        position: relative;
         border-top: 5px solid white;
         height: 0;
         width: 70%;
@@ -220,8 +222,40 @@ aside {
     gap: 10px;
     margin-top: 10px;
 }
-.language-element {
-
+@media (max-width: 1000px) {
+    .page {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    aside {
+        width: 100%;
+        padding: 0px 20px 20px 20px;
+        background: #111315;
+        margin-top: 0px;
+    }
+    .aside-background {
+        display: none;
+    }
+    .aside-list {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside-title{
+        width: fit-content;
+        margin: 0px auto;
+        font-size: 7vw;
+        margin-top: 10px;
+    }
+    .skills-list {
+        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    .language-list {
+        align-items: center;
+    }
 }
 
                                     /* Work */
@@ -331,4 +365,73 @@ aside {
 }
 .link:hover + .coffee-shop {
     display: block;
+}
+@media (max-width: 1000px) {
+    .wraper {
+        position: relative;
+        padding: 40px 40px 40px 40px;;
+        line-height: 22.4px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about > p {
+        text-indent:30px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .work-list {
+        position: relative;
+        margin-top: 30px;
+    }
+    .work-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+    .work-name {
+        position: relative;
+        font-size: 24px;
+    }
+    .work-name::before {
+        content: "";
+        background-image: url(assets/circle.svg);
+        position: absolute;
+        top: -2px;
+        left: -30px;
+        width: 24px;
+        height: 24px;
+    }
+    .college::before {
+        background-image: url(assets/school.svg);
+        top:-1px;
+    }
+    .work-element {
+        position: relative;
+    }
+    .work-element::before{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -19px;
+        width: 5px;
+        height: calc(100% - 2px);
+        border-left: 3px solid rgb(5, 5, 5);
+    }
+    .work-time {
+        width: fit-content;
+    }
+    .link:hover + .clothes-shop {
+        display: none;
+    }
+    .link:hover + .resume  {
+        display: none;
+    }
+    .link:hover + .coffee-shop {
+        display: none;
+    }
 }
