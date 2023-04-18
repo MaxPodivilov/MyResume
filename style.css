@@ -117,9 +117,9 @@ header {
     }
     .main-title {
         padding-top: 15px;
-        font-size: 12vw;
+        font-size: 11vw;
         font-weight: 900;
-        line-height:11vw;
+        line-height:10vw;
     }
     .name {
         width: 100%;
@@ -381,7 +381,7 @@ aside {
     .about > p {
         text-indent:30px;
         font-size: 16px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .work-list {
         position: relative;
