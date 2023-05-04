@@ -94,7 +94,7 @@ header {
     padding-right: 10px;
     cursor: pointer;
 }
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     header {
         border-radius: 0px 170px 0px 0px;
     }
@@ -224,6 +224,22 @@ aside {
     gap: 10px;
     margin-top: 10px;
 }
+.btn-block {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+}
+.btn {
+    position: relative;
+    font-size: 20px;
+    color: #fcfdf5;
+    text-decoration: underline;
+}
+.btn > img {
+    position: absolute;
+}
 @media (max-width: 1000px) {
     .page {
         flex-direction: column;
@@ -247,7 +263,7 @@ aside {
     .aside-title{
         width: fit-content;
         margin: 0px auto;
-        font-size: 7vw;
+        font-size: 24px;
         margin-top: 10px;
     }
     .skills-list {
@@ -256,6 +272,9 @@ aside {
         justify-content: center;
     }
     .language-list {
+        align-items: center;
+    }
+    .btn-block {
         align-items: center;
     }
 }
@@ -436,6 +455,79 @@ aside {
         display: none;
     }
     .link:hover + .coffee-shop {
+        display: none;
+    }
+}
+@media print {
+    title {
+        display: none;
+    }
+    .btn-block {
+        display: none;
+    }
+    .header-background {
+        display: none;
+    }
+    .content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        padding: 10px;
+        margin: 0px;
+    }
+    .photo {
+        width: 100px;
+    }
+    .main-photo {
+        object-fit: cover;
+        object-position: 50% 40%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 50%;
+    }
+    .header-title {
+        width: fit-content;
+        color: #fcfdf5;
+        padding:0px;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .main-title {
+        color: #111315;
+        font-size: 32px;
+        line-height:30px;
+    }
+    .name {
+        color: #111315;
+        font-size: 28px;
+    }
+    .main-description {
+        color: #111315;
+        margin:0px;
+        font-size: 24px;
+    }
+    .main-description::before {
+        display: none;
+    }
+    .page {
+        flex-direction: column-reverse;
+        margin: 0px;
+        padding: 0px;
+    }
+    aside {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+    .aside-list {
+        color: #111315;
+    }
+    .contact-element {
+        color: #111315;
+    }
+    .contact-list {
+        color: #111315;
+    }
+    .header-left-top, .a-right-bottom, .time-right-bottom {
         display: none;
     }
 }
